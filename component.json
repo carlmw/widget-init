@@ -1,0 +1,13 @@
+{
+  "name": "widget-init",
+  "repo": "carlmw/widget-init",
+  "description": "initialises widgets bound to DOM elements",
+  "version": "0.0.1",
+  "keywords": ["initialiser", "dom", "widget"],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
