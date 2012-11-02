@@ -5,5 +5,5 @@ module.exports = function (root) {
 };
 
 function initialiseWidget (el) {
-  require('../' + el.getAttribute('data-require'))(el);
+  require('../' + el.getAttribute('data-require'))(el, el.dataset);
 }
