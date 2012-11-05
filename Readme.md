@@ -9,17 +9,17 @@
 
 ## Example
 
-    <!doctype html>
-    <html>
-    <body>
-      <div data-require="test-widget">Target Element</div>
-      <script src="build/build.js"></script>
-      <script src="test-widget.js"></script>
-      <script>
-      require('widget-init')(document);
-      </script>
-    </body>
-    </html>
+    <div data-require="test-widget">Target Element</div>
+    <script>
+    require.register("test-widget", function(module){
+      module.exports = function (el, dataset) {
+        // Do something
+      };
+    });
+    </script>
+    <script>
+    require('widget-init')(document);
+    </script>
 
 
 ## License
