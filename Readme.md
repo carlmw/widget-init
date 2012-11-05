@@ -1,7 +1,7 @@
 
 # widget-init
 
-  initialises widgets bound to DOM elements
+  initialises widgets bound to DOM elements through a data-attribute hook
 
 ## Installation
 
