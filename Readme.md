@@ -17,8 +17,7 @@
         // dataset => {fooBar: "baz", require: "test-widget"}
       };
     });
-    </script>
-    <script>
+
     require('widget-init')(document);
     </script>
 
