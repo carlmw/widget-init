@@ -1,11 +1,20 @@
 <!doctype html>
 <html>
-<body>
-  <div data-require="test-widget" data-some-prop="hello" style="background-color:red;color:white;padding:10px">FAILED</div>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link rel="stylesheet" href="node_modules/mocha/mocha.css" />
   <script src="build/build.js"></script>
-  <script src="test-widget.js"></script>
+  <script src="node_modules/expect.js/expect.js"></script>
+  <script src="node_modules/mocha/mocha.js"></script>
+  <script>mocha.setup('bdd')</script>
+</head>
+<body>
+  <div id="mocha"></div>
+  <div id="fixture" style="position:absolute;left:-999em;"></div>
+  <script src="test/index.js"></script>
   <script>
-  require('widget-init')(document);
+  mocha.run();
   </script>
 </body>
 </html>

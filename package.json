@@ -1,0 +1,13 @@
+{
+  "name": "widget-init",
+  "version": "0.0.1",
+  "description": "initialises widgets bound to DOM elements through a data-attribute hook",
+  "author": "Carl Whittaker <carl359@gmail.com>",
+  "keywords": ["initialiser", "dom", "widget"],
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*",
+    "expect.js": "*"
+  },
+  "main": "index"
+}
