@@ -7,7 +7,8 @@
   "dependencies": {},
   "devDependencies": {
     "mocha": "*",
-    "expect.js": "*"
+    "expect.js": "*",
+    "mocha-phantomjs": "*"
   },
   "main": "index"
 }
