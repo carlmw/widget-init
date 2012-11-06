@@ -9,11 +9,12 @@
 
 ## Example
 
-    <div data-require="test-widget">Target Element</div>
+    <div id="target" data-require="test-widget" data-foo-bar="baz">Target Element</div>
     <script>
     require.register("test-widget", function(module){
       module.exports = function (el, dataset) {
-        // Do something
+        // el => div#target
+        // dataset => {fooBar: "baz", require: "test-widget"}
       };
     });
     </script>
